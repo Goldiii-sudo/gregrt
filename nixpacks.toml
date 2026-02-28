@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python3", "python3.11", "python311Packages.pip", "python311Packages.virtualenv"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.start]
+cmd = "python main.py"
